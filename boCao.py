@@ -12,10 +12,10 @@ PAYLOAD = {
     "uuid": "B391A98E-E176-4FFB-954E-757C959D74A1",
     "versionIOS": "1",
     "method": "gold",
-    "auth": "33295779ac154bb905221ec4600841ee",
+    "auth": "6dfc199d1c8b7e86465d359fc8aa470f",
     "activation_key": "",
     "email": "hoangphaile2@gmail.com",
-    "truyen_id": "13419626",
+    "truyen_id": "13418960",
     "registered": "2025-02-14 07:24:34",  # FIXED: dÃ¹ng timestamp cá»' Ä'á»‹nh
 }  # Adjust per API
 HEADERS = {
@@ -142,8 +142,8 @@ def spam_loop():
 
         if wait_seconds and wait_seconds > 1:
             # Server says to come back after X seconds; wait until ~1s before
-            print(f"[i] Waiting {wait_seconds - 1} seconds before next attempt...")
-            time.sleep(max(wait_seconds - 1, 0))
+            print(f"[i] Waiting {wait_seconds - 2} seconds before next attempt...")
+            time.sleep(max(wait_seconds - 2, 0))
 
         elapsed = time.time() - start
         time.sleep(max(DELAY - elapsed, 0))
